@@ -1,6 +1,5 @@
-" Title:          molokiaEz
-"	Description:    Default color scheme of VimEz.
-
+" Title:          MolokiaEz
+"	Description:    Default colorscheme of VimEz.
 " Authors:        Hamish Macpherson, Wimer Hazenberg, Tomas Restrepo
 " Maintainer:     Fontaine Cook <fontaine.cook@pearance.com>
 "	Last Modified:  08/20/2011
@@ -74,8 +73,8 @@ hi todo             guifg=#ffff00 guibg=bg      gui=bold,underline
 
 
 " "Search & Aids"
-hi Search           guifg=#444444 guibg=#ffd75f
-hi IncSearch        guifg=#ffffff guibg=#444444
+hi Search           guifg=#ffffff guibg=#444444
+hi IncSearch        guifg=bg      guibg=#ffd75f gui=bold
 "-------------------------------------------------------------------------------
 
 
@@ -141,7 +140,7 @@ hi User1            guifg=#1C1C1C guibg=#87FF00 gui=bold
 " Dimmed
 hi User2            guifg=#5F5F00 guibg=#87FF00 gui=bold
 " Non-Current
-hi User3            guifg=#303030 guibg=#1C1C1C
+hi User3            guifg=#444444 guibg=#1C1C1C
 
 let g:Active_statusline=&g:statusline
 let g:NCstatusline=substitute(
