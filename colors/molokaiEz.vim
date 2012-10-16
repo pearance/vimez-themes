@@ -2,7 +2,7 @@
 "	Description:    Default colorscheme of VimEz.
 " Authors:        Hamish Macpherson, Wimer Hazenberg, Tomas Restrepo
 " Maintainer:     Fontaine Cook <fontaine.cook@pearance.com>
-"	Last Modified:  08/20/2011
+"	Last Modified: Tue Sep 11, 2012  02:07PM
 " History:        Based on the molokai color scheme by Tomas Restrepo
 "                 which was based on the monokai theme for textmate
 "                 by Wimer Hazenberg and its darker variant
@@ -186,7 +186,7 @@ hi PmenuThumb       guifg=#5fdfff
 
 
 " "Syntax Keywords"
-hi Comment          guifg=#444444
+hi Comment          guifg=#cccccc
 hi Boolean          guifg=#875FFF
 hi Character        guifg=#87FF00
 hi Number           guifg=#af87ff
@@ -215,7 +215,7 @@ hi Question         guifg=#5fdfff
 hi Repeat           guifg=#FF0087               gui=bold
 hi Typedef          guifg=#5fdfff
 hi Type             guifg=#5fdfff               gui=none
-hi Underlined       guifg=#808080               gui=underline
+hi Underlined       guifg=#ffff00               gui=none
 "-------------------------------------------------------------------------------
 
 
