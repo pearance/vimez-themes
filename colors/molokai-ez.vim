@@ -56,8 +56,8 @@ let g:colors_name="molokai-ez"
 " #87ff00:118 - Neon green
 " #afd700:148 - Mustard green
 " #ff0087:197 - Original Molokai Hot pink
-" #ff87ff:213 - Hot pink
-" #5fdfff:81  - Sky blue
+" #ff00ff:13 -  Hot pink
+" #5fafff:81  - Sky blue
 " #af87ff:4   - Purple
 " #d7d787:186 - Dark Tan
 " #ffd75f:221 - Off Yellow
@@ -137,9 +137,9 @@ hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=none
 
 
 
-hi SpecialChar      guifg=#ff87ff               gui=none
+hi SpecialChar      guifg=#ff00ff               gui=none
 hi SpecialComment   guifg=#465457               gui=none
-hi Special          guifg=#5fdfff guibg=bg      gui=italic
+hi Special          guifg=#5fafff guibg=bg      gui=italic
 hi SpellBad         guisp=#FF0000 gui=undercurl
 hi SpellCap         guisp=#7070F0 gui=undercurl
 hi SpellLocal       guisp=#70F0F0 gui=undercurl
@@ -149,47 +149,47 @@ hi SpellRare        guisp=#FFFFFF gui=undercurl
 
 
 " "Autocomplete Menu"
-hi Pmenu            guifg=#5fdfff guibg=#262626
+hi Pmenu            guifg=#5fafff guibg=#262626
 hi PmenuSel         guifg=#dddddd guibg=#1c1c1c
 hi PmenuSbar                      guibg=#303030
-hi PmenuThumb       guifg=#5fdfff guibg=#4e4e4e
+hi PmenuThumb       guifg=#5fafff guibg=#4e4e4e
 "-------------------------------------------------------------------------------
 
 
 
 " "Syntax Keywords"
 hi Comment          guifg=#808080
-hi Statement        guifg=#ff87ff               gui=none
+hi Statement        guifg=#ff00ff               gui=none
 hi StorageClass     guifg=#FD971F               gui=italic
-hi Structure        guifg=#5fdfff
-hi Tag              guifg=#ff87ff               gui=italic
+hi Structure        guifg=#5fafff
+hi Tag              guifg=#ff00ff               gui=italic
 hi Boolean          guifg=#875FFF
 hi Character        guifg=#87FF00
 hi Number           guifg=#af87ff
 hi String           guifg=#D7D787
-hi Conditional      guifg=#ff87ff               gui=none
+hi Conditional      guifg=#ff00ff               gui=none
 hi Constant         guifg=#af87ff               gui=none
 hi Debug            guifg=#BCA3A3               gui=none
-hi Define           guifg=#5fdfff
+hi Define           guifg=#5fafff
 hi Delimiter        guifg=#8F8F8F
 hi Error            guifg=#FFFFFF guibg=#FF0000 gui=none
 hi Function         guifg=#AFD700
 hi Identifier       guifg=#FD971F
-hi Keyword          guifg=#ff87ff               gui=none
+hi Keyword          guifg=#ff00ff               gui=none
 hi Label            guifg=#D7D787               gui=none
 hi Macro            guifg=#C4BE89               gui=italic
 hi MatchParen       guifg=#000000 guibg=#FD971F gui=none
-hi Operator         guifg=#ff87ff
+hi Operator         guifg=#ff00ff
 hi Directory        guifg=#AFD700               gui=none
 hi Exception        guifg=#AFD700               gui=none
 hi Float            guifg=#af87ff
 hi Ignore           guifg=#808080 guibg=bg
 hi PreCondit        guifg=#AFD700               gui=none
 hi PreProc          guifg=#AFD700
-hi Question         guifg=#5fdfff
-hi Repeat           guifg=#ff87ff               gui=none
-hi Typedef          guifg=#5fdfff
-hi Type             guifg=#5fdfff               gui=none
+hi Question         guifg=#5fafff
+hi Repeat           guifg=#ff00ff               gui=none
+hi Typedef          guifg=#5fafff
+hi Type             guifg=#5fafff               gui=none
 hi Underlined       guifg=#ffff00               gui=none
 hi vimIsCommand			guifg=#cccccc
 
@@ -219,171 +219,4 @@ hi vimIsCommand			guifg=#cccccc
 "|hl-DiffDelete| DiffDelete  Deleted lines.  Also called filler lines,
 "        because they don't really exist in this
 "        buffer.
-
-
-
-
-call Pl#Hi#Allocate({
-	\ 'black'          : 16,
-	\ 'white'          : 231,
-	\
-	\ 'lightgreen'	   : 192,
-	\ 'mediumgreen'    : 118,
-	\ 'darkgreen'			 : 22,
-	\
-	\ 'lightpink'			 : 225,
-	\ 'mediumpink'		 : 196,
-	\ 'darkpink'			 : 89,
-	\
-	\ 'lightblue'      : 117,
-	\ 'mediumblue'     : 45,
-	\ 'darkblue'		   : 32,
-	\
-	\ 'lightred'			 : 196,
-	\ 'mediumred'      : 124,
-	\ 'darkred'        : 88,
-	\
-	\ 'gray0'          : 233,
-	\ 'gray1'          : 235,
-	\ 'gray2'          : 236,
-	\ 'gray3'          : 239,
-	\ 'gray4'          : 240,
-	\ 'gray5'          : 241,
-	\ 'gray6'          : 244,
-	\ 'gray7'          : 245,
-	\ 'gray8'          : 247,
-	\ 'gray9'          : 250,
-	\ 'gray10'         : 252,
-	\ })
-
-let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
-	\ Pl#Hi#Segments(['SPLIT'], {
-		\ 'n': ['black', 'mediumgreen'],
-		\ 'N': ['black', 'gray2'],
-		\ 'i': ['black', 'mediumpink'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['mode_indicator'], {
-		\ 'n': ['darkgreen', 'white', ['bold']],
-		\ 'i': ['darkpink', 'white', ['none']],
-		\ 'v': ['white', 'lightred', ['bold']],
-		\ 'r': ['lightred', 'white', ['bold']],
-		\ 's': ['white', 'gray5', ['bold']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['branch', 'scrollpercent', 'raw', 'filesize'], {
-		\ 'n': ['darkgreen', 'lightgreen'],
-		\ 'N': ['gray7', 'gray1'],
-		\ 'i': ['gray2', 'lightpink'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['fileinfo', 'filename'], {
-		\ 'n': ['darkgreen', 'lightgreen', ['bold']],
-		\ 'N': ['gray7', 'gray1', ['none']],
-		\ 'i': ['gray2', 'lightpink', ['none']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['fileinfo.filepath'], {
-		\ 'n': ['black'],
-		\ 'N': ['gray7'],
-		\ 'i': ['gray2'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['static_str'], {
-		\ 'n': ['white', 'gray4'],
-		\ 'N': ['gray7', 'gray1'],
-		\ 'i': ['white', 'darkpink'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['fileinfo.flags'], {
-		\ 'n': ['lightred', ['none']],
-		\ 'N': ['lightred'],
-		\ 'i': ['lightred', ['none']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['currenttag', 'fullcurrenttag', 'fileformat', 'fileencoding', 'pwd', 'filetype', 'rvm:string', 'rvm:statusline', 'virtualenv:statusline', 'charcode', 'currhigroup'], {
-		\ 'n': ['darkgreen', 'lightgreen'],
-		\ 'i': ['gray2', 'lightpink'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['lineinfo'], {
-		\ 'n': ['darkgreen', 'white', ['bold']],
-		\ 'N': ['gray7', 'gray1', ['none']],
-		\ 'i': ['darkpink', 'white', ['none']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['errors'], {
-		\ 'n': ['lightred', 'gray2', ['none']],
-		\ 'i': ['lightred', 'darkpink', ['none']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['lineinfo.line.tot'], {
-		\ 'n': ['gray1'],
-		\ 'N': ['gray7'],
-		\ 'i': ['gray1'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['paste_indicator', 'ws_marker'], {
-		\ 'n': ['white', 'lightred', ['bold']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['gundo:static_str.name', 'command_t:static_str.name'], {
-		\ 'n': ['darkgreen', 'white', ['bold']],
-		\ 'N': ['gray7', 'gray1', ['bold']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['gundo:static_str.buffer', 'command_t:raw.line'], {
-		\ 'n': ['darkgreen', 'lightgreen'],
-		\ 'N': ['gray7', 'gray1'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['gundo:SPLIT', 'command_t:SPLIT'], {
-		\ 'n': ['black', 'mediumgreen'],
-		\ 'N': ['gray7', 'gray1'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['lustyexplorer:static_str.name', 'minibufexplorer:static_str.name', 'nerdtree:raw.name', 'tagbar:static_str.name'], {
-		\ 'n': ['darkgreen', 'lightgreen', ['bold']],
-		\ 'N': ['gray7', 'gray1', ['none']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['lustyexplorer:static_str.buffer', 'tagbar:static_str.buffer'], {
-		\ 'n': ['lightgreen', 'mediumgreen'],
-		\ 'N': ['gray7', 'gray1'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['lustyexplorer:SPLIT', 'minibufexplorer:SPLIT', 'nerdtree:SPLIT', 'tagbar:SPLIT'], {
-		\ 'n': ['white', 'mediumgreen'],
-		\ 'N': ['gray7', 'gray1'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['ctrlp:focus', 'ctrlp:byfname'], {
-		\ 'n': ['darkgreen', 'lightgreen'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['ctrlp:prev', 'ctrlp:next', 'ctrlp:pwd'], {
-		\ 'n': ['darkgreen', 'lightgreen'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['ctrlp:item'], {
-		\ 'n': ['darkgreen', 'white', ['bold']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['ctrlp:marked'], {
-		\ 'n': ['lightred', 'lightgreen', ['bold']],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['ctrlp:count'], {
-		\ 'n': ['lightred', 'white'],
-		\ }),
-	\
-	\ Pl#Hi#Segments(['ctrlp:SPLIT'], {
-		\ 'n': ['black', 'mediumgreen'],
-		\ }),
-	\ ])
-
-
-
-
-
 
