@@ -86,7 +86,7 @@ hi SignColumn       guifg=#AFD700 guibg=#262626
 hi VertSplit        guifg=#87FF00 guibg=bg      gui=none
 hi Visual                         guibg=#303030
 hi VisualNOS                      guibg=#403D3D
-hi WildMenu         guifg=#080808 guibg=#5faf00 gui=none
+hi WildMenu         guifg=#080808 guibg=#87ff00 gui=none
 hi title            guifg=#ef5939
 hi todo             guifg=#ffff00 guibg=bg      gui=none,underline
 "-------------------------------------------------------------------------------
