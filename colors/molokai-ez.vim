@@ -28,8 +28,11 @@
 " magenta 233 4 125
 " cyan 103 217 240
 " white 255 255 255
+"-------------------------------------------------------------------------------
 
 
+
+" "intialization""
 hi clear
 set background=dark
 if exists("syntax_on")
@@ -37,6 +40,7 @@ if exists("syntax_on")
 endif
 
 let g:colors_name="molokai-ez"
+
 " #080808:232 - Gray2
 " #121212:233 - Gray3
 " #1c1c1c:234 - Gray4
@@ -55,25 +59,34 @@ let g:colors_name="molokai-ez"
 " #d7d787:186 - Dark Tan
 " #ffd75f:221 - Off Yellow
 " #ffff00:226 - Yellow
+"-------------------------------------------------------------------------------
 
 
 " "General Syntax"
 hi Normal           guifg=#ffffff guibg=#121212
-hi NonText          guifg=#444444 guibg=NONE
 "-------------------------------------------------------------------------------
 
+" "Formating Characters"
+" The 'NonText' highlighting will be used for 'eol', 'extends' and precedes.
+" SpecialKey" for 'nbsp', 'tab' and 'trail'.
+"
+hi NonText          guifg=#444444 guibg=NONE
+hi SpecialKey       guifg=#444444 guibg=NONE    gui=italic
 
 
-" "Cursor & UI Aids"
-hi Cursor           guifg=#000000 guibg=#87FF00 gui=bold
-hi CursorLine                     guibg=#1C1C1C
-hi CursorColumn                   guibg=#1C1C1C
+" "Cursor"
+hi Cursor           guifg=#000000 guibg=#ffffff gui=bold
+hi CursorLine                     guibg=#1c1c1c
+hi CursorColumn                   guibg=#1c1c1c
 hi ColorColumn                    guibg=#080808
+
+
+" "UI Aids"
 hi LineNr           guifg=#606060 guibg=#262626
 hi SignColumn       guifg=#AFD700 guibg=#262626
 hi VertSplit        guifg=#87FF00 guibg=bg      gui=bold
-hi Visual                         guibg=#303030
-hi VisualNOS                      guibg=#403D3D
+hi Visual                         guibg=#444444
+hi VisualNOS                      guibg=#444444
 hi WildMenu         guifg=#080808 guibg=#5faf00 gui=bold
 hi title            guifg=#ef5939
 hi todo             guifg=#ffff00 guibg=bg      gui=bold,underline
@@ -125,15 +138,14 @@ hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=bold
 
 
 
-hi SpecialChar      guifg=#FF0087               gui=bold
-hi SpecialComment   guifg=#465457               gui=bold
+hi SpecialChar      guifg=#FF0087               gui=none
+hi SpecialComment   guifg=#465457               gui=none
 hi Special          guifg=#5fdfff guibg=bg      gui=italic
-hi SpecialKey       guifg=#888A85               gui=italic
 hi SpellBad         guisp=#FF0000 gui=undercurl
 hi SpellCap         guisp=#7070F0 gui=undercurl
 hi SpellLocal       guisp=#70F0F0 gui=undercurl
 hi SpellRare        guisp=#FFFFFF gui=undercurl
-hi Statement        guifg=#FF0087               gui=bold
+hi Statement        guifg=#FF0087               gui=none
 hi StorageClass     guifg=#FD971F               gui=italic
 hi Structure        guifg=#5fdfff
 hi Tag              guifg=#FF0087               gui=italic
@@ -211,7 +223,6 @@ hi Identifier       guifg=#FD971F
 hi Keyword          guifg=#FF0087               gui=bold
 hi Label            guifg=#D7D787               gui=none
 hi Macro            guifg=#C4BE89               gui=italic
-hi SpecialKey       guifg=#5fdfff               gui=italic
 hi MatchParen       guifg=#000000 guibg=#FD971F gui=bold
 hi Operator         guifg=#FF0087
 hi Directory        guifg=#AFD700               gui=bold
