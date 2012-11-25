@@ -14,10 +14,10 @@
 
 
 
-" COLORS: {{{
+" COLORS:"{{{
 " ******************************************************************************
 
-" "Terminal Colors" {{{
+" "Terminal Colors""{{{
 " fg 196 141 255
 " bg 18 18 18
 " black 26 26 26
@@ -31,7 +31,7 @@
 
 
 
-" }}}
+"}}}
 " "Primary Syntax Colors"
 " #BCBCBC:250 #121212:233
 
@@ -43,13 +43,13 @@
 " "UI/Secondary Colors"
 " #FF005F:197 #87FF00:118 #FFD700:220 #AF87FF:141 #FF8700:208 #FF5F5F:203
 
-" #080808 #1C1C1C #262626 #303030 #444444 #808080
+" #080808 #121212 #1C1C1C #262626 #303030 #444444 #808080
 "-------------------------------------------------------------------------------
 
 
 
-" }}}
-" INTIALIZATION: {{{
+"}}}
+" INTIALIZATION:"{{{
 " ******************************************************************************
 
 set background=dark
@@ -64,14 +64,43 @@ let g:colors_name="molokai-ez"
 
 
 
-" }}}
-" USER INTERFACE: {{{
+"}}}
+" USER INTERFACE:"{{{
 " ******************************************************************************
 
 " "General"
 hi Normal           guifg=#BCBCBC guibg=#121212
 hi WildMenu         guifg=#080808 guibg=#87FF00
 hi Directory        guifg=#AFD700 guibg=bg
+"-------------------------------------------------------------------------------
+
+
+
+" "Window Split"
+hi VertSplit        guifg=#262626 guibg=#262626
+"-------------------------------------------------------------------------------
+
+
+
+" "Cursor"
+hi Cursor           guifg=#000000 guibg=#AFD700
+hi CursorLine                     guibg=#1C1C1C
+hi CursorColumn                   guibg=#1C1C1C
+" hi CursorLineNr     guifg=#AFD700
+"-------------------------------------------------------------------------------
+
+
+
+" "#/+ Columns"
+hi LineNr           guifg=#606060 guibg=#262626
+hi SignColumn       guifg=#AFD700 guibg=#262626
+"-------------------------------------------------------------------------------
+
+
+
+" "Folds"
+hi FoldColumn       guifg=#AFD700 guibg=#262626
+hi Folded           guifg=#AFD700 guibg=bg
 "-------------------------------------------------------------------------------
 
 
@@ -86,31 +115,8 @@ hi MatchParen       guifg=#080808 guibg=#FFD700
 
 
 
-" "Cursor"
-hi Cursor           guifg=#000000 guibg=#BCBCBC
-hi CursorLine                     guibg=#1C1C1C
-hi CursorColumn                   guibg=#1C1C1C
-" hi CursorLineNr     guifg=#AFD700
-"-------------------------------------------------------------------------------
-
-
-
 " "Rule"
 hi ColorColumn                    guibg=#080808
-"-------------------------------------------------------------------------------
-
-
-
-" "Folds"
-hi FoldColumn       guifg=#AFD700 guibg=#262626
-hi Folded           guifg=#AFD700 guibg=bg
-"-------------------------------------------------------------------------------
-
-
-
-" "#/+ Columns"
-hi LineNr           guifg=#606060 guibg=#262626
-hi SignColumn       guifg=#AFD700 guibg=#262626
 "-------------------------------------------------------------------------------
 
 
@@ -120,12 +126,6 @@ hi title            guifg=#AFD700
 hi TabLine          guifg=#080808 guibg=#444440
 hi TabLineFill                    guibg=#262626
 hi TabLineSel       guifg=#AFD700 guibg=bg
-"-------------------------------------------------------------------------------
-
-
-
-" "Window Splits"
-hi VertSplit        guifg=bg      guibg=bg
 "-------------------------------------------------------------------------------
 
 
@@ -147,15 +147,15 @@ hi IncSearch        guifg=#000000 guibg=#FFD700
 " "Diff & Aids"
 hi DiffAdd          guifg=#87FF00 guibg=bg
 hi DiffChange       guifg=#FFD700 guibg=bg
-hi DiffDelete       guifg=#FF005F guibg=bg
-hi DiffText         guifg=fg      guibg=bg
+hi DiffDelete       guifg=#FF0000 guibg=bg
+hi DiffText         guifg=#5FD7FF guibg=bg
 "-------------------------------------------------------------------------------
 
 
 
 " "Messages"
 hi ModeMsg          guifg=fg      guibg=bg
-hi ErrorMsg         guifg=#FF005F guibg=bg
+hi ErrorMsg         guifg=#FF0000 guibg=bg
 hi MoreMsg          guifg=fg      guibg=bg
 hi Question         guifg=fg      guibg=bg
 hi WarningMsg       guifg=fg      guibg=bg
@@ -181,7 +181,7 @@ hi PmenuThumb       guifg=#5FD7FF
 
 
 
-" - Powerline: {{{
+" - Powerline:"{{{
 call Pl#Hi#Allocate({
 	\ 'black'          : 16,
 	\ 'white'          : 231,
@@ -383,14 +383,14 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 "   au InsertLeave * setlocal hlsearch
 " augroup END
 "-------------------------------------------------------------------------------------------------------------------------------
-" }}}
-" }}}
-" GENERAL SYNTAX: {{{
+"}}}
+"}}}
+" GENERAL SYNTAX:"{{{
 " ******************************************************************************
 
 " "Comments"
 hi Comment          guifg=#444444
-"-------------------------------------------------------------------------------
+ "-------------------------------------------------------------------------------
 
 " "Values"
 hi Constant         guifg=#5FD7FF               gui=NONE
@@ -449,8 +449,8 @@ hi Todo             guifg=#FFD700 guibg=bg      gui=bold
 
 
 
-" }}}
-" VIMSCRIPT SYNTAX: {{{
+"}}}
+" VIMSCRIPT SYNTAX:"{{{
 " Pink
 hi link VimCommand         Statement
 hi link VimFuncName        Statement
@@ -475,7 +475,7 @@ hi link VimHiGuiRgb        PreProc
 
 
 
-" }}}
+"}}}
 " DIFF SYNTAX:"{{{
 " ******************************************************************************
 hi DiffAdded        guifg=#87FF00
@@ -486,7 +486,7 @@ hi GitCommitSummary guifg=#BCBCBC
 
 
 "}}}
-" SCSS SYNTAX: {{{
+" SCSS SYNTAX:"{{{
 " ******************************************************************************
 
 " Pink
@@ -522,5 +522,5 @@ hi link CssPseudoClassId   PreProc
 "-------------------------------------------------------------------------------
 
 
-
-" }}} vim:fdm=marker:
+"vim:fdm=marker:
+"}}}
