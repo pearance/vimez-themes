@@ -1,3 +1,4 @@
+" vim:fdm=marker:
 "  __  __  ___  _     ___  _  __   _    ___      _____ _____
 " |  \/  |/ _ \| |   / _ \| |/ /  / \  |_ _|    | ____|__  /
 " | |\/| | | | | |  | | | | ' /  / _ \  | |_____|  _|   / /
@@ -69,15 +70,15 @@ let g:colors_name="molokai-ez"
 " ******************************************************************************
 
 " "General"
-hi Normal           guifg=#BCBCBC guibg=#121212
-hi WildMenu         guifg=#080808 guibg=#87FF00
+hi Normal           guifg=#AFD700 guibg=#121212
+hi WildMenu         guifg=#87FF00 guibg=#262626
 hi Directory        guifg=#AFD700 guibg=bg
 "-------------------------------------------------------------------------------
 
 
 
 " "Window Split"
-hi VertSplit        guifg=#262626 guibg=#262626
+hi VertSplit        guifg=NONE    guibg=#AFD700
 "-------------------------------------------------------------------------------
 
 
@@ -493,9 +494,12 @@ hi GitCommitSummary guifg=#BCBCBC
 hi link CssColorProp       Statement
 hi link CssFontProp        Statement
 hi link CssRenderProp      Statement
+hi link CssTextProp        Operator
+hi link CssBoxProp         Operator
 hi link SassIDChar         Operator
 hi link SassClassChar      Operator
 hi link CssPseudoClass     Operator
+hi link CssGeneratedContentProp Statement
 
 " Tan
 hi link CssBraces          Type
@@ -515,6 +519,7 @@ hi link CssValueLength     Constant
 hi link CssFontAttr        Constant
 hi link SassCssAttribute   Constant
 hi link CssColor           Constant
+hi link CssGeneratedContentAttr Constant
 
 " Green
 hi link CssImportant       PreProc
@@ -522,5 +527,5 @@ hi link CssPseudoClassId   PreProc
 "-------------------------------------------------------------------------------
 
 
-"vim:fdm=marker:
+
 "}}}
