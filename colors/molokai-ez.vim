@@ -1,4 +1,4 @@
-" vim:fdm=marker:
+" vim:ft=vim:fdm=marker:
 "  __  __  ___  _     ___  _  __   _    ___      _____ _____
 " |  \/  |/ _ \| |   / _ \| |/ /  / \  |_ _|    | ____|__  /
 " | |\/| | | | | |  | | | | ' /  / _ \  | |_____|  _|   / /
@@ -70,7 +70,7 @@ let g:colors_name="molokai-ez"
 " ******************************************************************************
 
 " "General"
-hi Normal           guifg=#AFD700 guibg=#121212
+hi Normal           guifg=#B2B2B2 guibg=#121212
 hi WildMenu         guifg=#87FF00 guibg=#262626
 hi Directory        guifg=#AFD700 guibg=bg
 "-------------------------------------------------------------------------------
@@ -78,7 +78,7 @@ hi Directory        guifg=#AFD700 guibg=bg
 
 
 " "Window Split"
-hi VertSplit        guifg=NONE    guibg=#AFD700
+hi VertSplit        guifg=NONE    guibg=#262626
 "-------------------------------------------------------------------------------
 
 
@@ -93,7 +93,7 @@ hi CursorColumn                   guibg=#1C1C1C
 
 
 " "#/+ Columns"
-hi LineNr           guifg=#606060 guibg=#262626
+hi LineNr           guifg=#808080 guibg=#262626
 hi SignColumn       guifg=#AFD700 guibg=#262626
 "-------------------------------------------------------------------------------
 
@@ -182,13 +182,14 @@ hi PmenuThumb       guifg=#5FD7FF
 
 
 
-" - Powerline:"{{{
+"}}}
+" POWERLINE:"{{{
 call Pl#Hi#Allocate({
 	\ 'black'          : 16,
 	\ 'white'          : 231,
 	\
 	\ 'lightgreen'	   : 192,
-	\ 'mediumgreen'    : 118,
+	\ 'mediumgreen'    : 148,
 	\ 'darkgreen'			 : 22,
 	\
 	\ 'lightpink'			 : 225,
@@ -239,7 +240,7 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 	\
 	\ Pl#Hi#Segments(['fileinfo', 'filename'], {
 		\ 'n': ['darkgreen', 'lightgreen', ['none']],
-		\ 'N': ['gray7', 'gray1', ['none']],
+		\ 'N': ['gray7', 'mediumgreen', ['none']],
 		\ 'i': ['gray2', 'lightpink', ['none']],
 		\ }),
 	\
@@ -251,7 +252,7 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 	\
 	\ Pl#Hi#Segments(['static_str'], {
 		\ 'n': ['white', 'gray4'],
-		\ 'N': ['gray7', 'gray1'],
+		\ 'N': ['gray7', 'mediumgreen'],
 		\ 'i': ['white', 'darkpink'],
 		\ }),
 	\
@@ -268,7 +269,7 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 	\
 	\ Pl#Hi#Segments(['lineinfo'], {
 		\ 'n': ['darkgreen', 'white', ['none']],
-		\ 'N': ['gray7', 'gray1', ['none']],
+		\ 'N': ['gray7', 'mediumgreen', ['none']],
 		\ 'i': ['darkpink', 'white', ['none']],
 		\ }),
 	\
@@ -384,7 +385,6 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 "   au InsertLeave * setlocal hlsearch
 " augroup END
 "-------------------------------------------------------------------------------------------------------------------------------
-"}}}
 "}}}
 " GENERAL SYNTAX:"{{{
 " ******************************************************************************
