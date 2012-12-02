@@ -175,8 +175,8 @@ hi SpellRare        guisp=#FF8700 gui=undercurl
 
 " "Autocomplete Menu"
 hi Pmenu            guifg=#5FD7FF guibg=#444444
-hi PmenuSel                       guibg=#808080
-hi PmenuSbar                      guibg=#080808
+hi PmenuSel         guifg=#5FD7FF guibg=#262626
+hi PmenuSbar                      guibg=#303030
 hi PmenuThumb       guifg=#5FD7FF
 "-------------------------------------------------------------------------------
 
