@@ -145,11 +145,11 @@ hi IncSearch        guifg=#000000 guibg=#FFD700
 
 
 
-" "Diff & Aids"
-hi DiffAdd          guifg=#87FF00 guibg=bg
-hi DiffChange       guifg=#FFD700 guibg=bg
-hi DiffDelete       guifg=#FF0000 guibg=bg
-hi DiffText         guifg=#5FD7FF guibg=bg
+" "Diff"
+hi DiffAdd          guifg=#000000 guibg=#D7FFAF
+hi DiffChange       guifg=#626262 guibg=#1C1C1C
+hi DiffDelete       guifg=#000000 guibg=#FFAFAF
+hi DiffText         guifg=#000000 guibg=#D7FFAF
 "-------------------------------------------------------------------------------
 
 
@@ -176,8 +176,17 @@ hi SpellRare        guisp=#FF8700 gui=undercurl
 " "Autocomplete Menu"
 hi Pmenu            guifg=#5FD7FF guibg=#444444
 hi PmenuSel         guifg=#5FD7FF guibg=#262626
-hi PmenuSbar                      guibg=#303030
+hi PmenuSbar                      guibg=#000000
 hi PmenuThumb       guifg=#5FD7FF
+"-------------------------------------------------------------------------------
+
+
+
+" "ShowMarks"
+hi ShowMarksHLl     guifg=#AFD700 guibg=#262626 gui=NONE
+hi ShowMarksHLu     guifg=#AFD700 guibg=#262626 gui=NONE
+hi ShowMarksHLo     guifg=#AFD700 guibg=#262626 gui=NONE
+hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=NONE
 "-------------------------------------------------------------------------------
 
 
