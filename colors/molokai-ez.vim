@@ -214,7 +214,7 @@ call Pl#Hi#Allocate({
 	\ 'darkred'        : 88,
 	\
 	\ 'gray0'          : 233,
-	\ 'gray1'          : 235,
+	\ 'gray1'          : 234,
 	\ 'gray2'          : 236,
 	\ 'gray3'          : 239,
 	\ 'gray4'          : 240,
@@ -222,7 +222,7 @@ call Pl#Hi#Allocate({
 	\ 'gray6'          : 244,
 	\ 'gray7'          : 245,
 	\ 'gray8'          : 247,
-	\ 'gray9'          : 250,
+	\ 'gray9'          : 249,
 	\ 'gray10'         : 252,
 	\ })
 
@@ -243,25 +243,25 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 	\
 	\ Pl#Hi#Segments(['branch', 'scrollpercent', 'raw', 'filesize'], {
 		\ 'n': ['darkgreen', 'lightgreen'],
-		\ 'N': ['gray7', 'gray1'],
+		\ 'N': ['gray9', 'gray1'],
 		\ 'i': ['gray2', 'lightpink'],
 		\ }),
 	\
 	\ Pl#Hi#Segments(['fileinfo', 'filename'], {
 		\ 'n': ['darkgreen', 'lightgreen', ['none']],
-		\ 'N': ['gray7', 'mediumgreen', ['none']],
+		\ 'N': ['gray9', 'gray1', ['none']],
 		\ 'i': ['gray2', 'lightpink', ['none']],
 		\ }),
 	\
 	\ Pl#Hi#Segments(['fileinfo.filepath'], {
 		\ 'n': ['black'],
-		\ 'N': ['gray7'],
+		\ 'N': ['gray1'],
 		\ 'i': ['gray2'],
 		\ }),
 	\
 	\ Pl#Hi#Segments(['static_str'], {
 		\ 'n': ['white', 'gray4'],
-		\ 'N': ['gray7', 'mediumgreen'],
+		\ 'N': ['gray9', 'gray1'],
 		\ 'i': ['white', 'darkpink'],
 		\ }),
 	\
@@ -278,7 +278,7 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 	\
 	\ Pl#Hi#Segments(['lineinfo'], {
 		\ 'n': ['darkgreen', 'white', ['none']],
-		\ 'N': ['gray7', 'mediumgreen', ['none']],
+		\ 'N': ['gray1', 'gray1', ['none']],
 		\ 'i': ['darkpink', 'white', ['none']],
 		\ }),
 	\
@@ -289,7 +289,7 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 	\
 	\ Pl#Hi#Segments(['lineinfo.line.tot'], {
 		\ 'n': ['gray1'],
-		\ 'N': ['gray7'],
+		\ 'N': ['gray1'],
 		\ 'i': ['gray1'],
 		\ }),
 	\
