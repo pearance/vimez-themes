@@ -75,13 +75,9 @@ hi WildMenu         guifg=#87FF00 guibg=#262626
 hi Directory        guifg=#AFD700 guibg=bg
 "-------------------------------------------------------------------------------
 
-
-
 " "Window Split"
 hi VertSplit        guifg=NONE    guibg=#262626
 "-------------------------------------------------------------------------------
-
-
 
 " "Cursor"
 hi Cursor           guifg=#000000 guibg=#AFD700
@@ -90,21 +86,15 @@ hi CursorColumn                   guibg=#1C1C1C
 " hi CursorLineNr     guifg=#AFD700
 "-------------------------------------------------------------------------------
 
-
-
 " "#/+ Columns"
 hi LineNr           guifg=#808080 guibg=#262626
 hi SignColumn       guifg=#AFD700 guibg=#262626
 "-------------------------------------------------------------------------------
 
-
-
 " "Folds"
 hi FoldColumn       guifg=#AFD700 guibg=#262626
 hi Folded           guifg=#AFD700 guibg=bg
 "-------------------------------------------------------------------------------
-
-
 
 " "Meta Characters"
 " The 'NonText' highlightinG WILL be used FOR 'eol', 'extends' and precedes.
@@ -114,13 +104,9 @@ hi SpecialKey       guifg=#444444 guibg=bg      gui=italic
 hi MatchParen       guifg=#080808 guibg=#FFD700
 "-------------------------------------------------------------------------------
 
-
-
 " "Rule"
 hi ColorColumn                    guibg=#080808
 "-------------------------------------------------------------------------------
-
-
 
 " "Tab Line"
 hi title            guifg=#AFD700
@@ -129,21 +115,15 @@ hi TabLineFill                    guibg=#262626
 hi TabLineSel       guifg=#AFD700 guibg=bg
 "-------------------------------------------------------------------------------
 
-
-
 " "Visual Selection"
 hi Visual                         guibg=#303030
 hi VisualNOS                      guibg=#303030
 "-------------------------------------------------------------------------------
 
-
-
 " "Search"
 hi Search           guifg=#000000 guibg=#FFD700
 hi IncSearch        guifg=#000000 guibg=#FFD700
 "-------------------------------------------------------------------------------
-
-
 
 " "Diff"
 hi DiffAdd          guifg=#000000 guibg=#D7FFAF
@@ -151,8 +131,6 @@ hi DiffChange       guifg=#626262 guibg=#1C1C1C
 hi DiffDelete       guifg=#000000 guibg=#FFAFAF
 hi DiffText         guifg=#000000 guibg=#D7FFAF
 "-------------------------------------------------------------------------------
-
-
 
 " "Messages"
 hi ModeMsg          guifg=fg      guibg=bg
@@ -162,16 +140,12 @@ hi Question         guifg=fg      guibg=bg
 hi WarningMsg       guifg=fg      guibg=bg
 "-------------------------------------------------------------------------------
 
-
-
 " "Spell Checker"
 hi SpellBad         guisp=#FF5F5F gui=undercurl
 hi SpellCap         guisp=#FF5F5F gui=undercurl
 hi SpellLocal       guisp=#FF8700 gui=undercurl
 hi SpellRare        guisp=#FF8700 gui=undercurl
 "-------------------------------------------------------------------------------
-
-
 
 " "Autocomplete Menu"
 hi Pmenu            guifg=#5FD7FF guibg=#444444
@@ -180,13 +154,19 @@ hi PmenuSbar                      guibg=#000000
 hi PmenuThumb       guifg=#5FD7FF
 "-------------------------------------------------------------------------------
 
-
-
 " "ShowMarks"
 hi ShowMarksHLl     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLu     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLo     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=NONE
+"-------------------------------------------------------------------------------
+
+" "Git"
+hi gitcommitDiscardedType  guifg=#FFD700          gui=NONE
+hi gitcommitDiscardedFile  guifg=#FFD700          gui=NONE
+hi gitcommitSelectedType   guifg=#87FF00 guibg=bg gui=NONE
+hi gitcommitSelectedFile   guifg=#87FF00 guibg=bg gui=NONE
+hi gitcommitHeader         guifg=#5FD7FF guibg=bg gui=NONE
 "-------------------------------------------------------------------------------
 
 
@@ -452,7 +432,7 @@ hi Debug            guifg=#FF005F               gui=NONE
 
 " "Misc"
 hi Underlined       guifg=#808080               gui=underline
-hi Ignore           guifg=#BCBCBC guibg=bg      gui=NONE
+hi Ignore           guifg=#B2B2B2 guibg=bg      gui=NONE
 hi Error            guifg=#FFFFFF guibg=#FF0000 gui=NONE
 hi Todo             guifg=#FFD700 guibg=bg      gui=bold
 "-------------------------------------------------------------------------------
