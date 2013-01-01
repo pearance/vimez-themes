@@ -47,8 +47,6 @@
 " #080808 #121212 #1C1C1C #262626 #303030 #444444 #808080
 "-------------------------------------------------------------------------------
 
-
-
 "}}}
 " INTIALIZATION:"{{{
 " ******************************************************************************
@@ -63,116 +61,126 @@ endif
 let g:colors_name="molokai-ez"
 "-------------------------------------------------------------------------------
 
-
-
 "}}}
 " USER INTERFACE:"{{{
 " ******************************************************************************
 
-" "General"
+" "General""{{{
 hi Normal           guifg=#B2B2B2 guibg=#121212
 hi WildMenu         guifg=#87FF00 guibg=#262626
 hi Directory        guifg=#AFD700 guibg=bg
 "-------------------------------------------------------------------------------
-
-" "Window Split"
+"}}}
+" "Window Split""{{{
 hi VertSplit        guifg=NONE    guibg=#262626
 "-------------------------------------------------------------------------------
-
-" "Cursor"
+"}}}
+" "Cursor""{{{
 hi Cursor           guifg=#000000 guibg=#AFD700
 hi CursorLine                     guibg=#1C1C1C
 hi CursorColumn                   guibg=#1C1C1C
 " hi CursorLineNr     guifg=#AFD700
 "-------------------------------------------------------------------------------
-
-" "#/+ Columns"
+"}}}
+" "#/+ Columns""{{{
 hi LineNr           guifg=#808080 guibg=#262626
 hi SignColumn       guifg=#AFD700 guibg=#262626
 "-------------------------------------------------------------------------------
-
-" "Folds"
+"}}}
+" "Folds""{{{
 hi FoldColumn       guifg=#AFD700 guibg=#262626
 hi Folded           guifg=#AFD700 guibg=bg
 "-------------------------------------------------------------------------------
-
-" "Meta Characters"
+"}}}
+" "Meta Characters""{{{
 " The 'NonText' highlightinG WILL be used FOR 'eol', 'extends' and precedes.
 " SpecialKey" for 'nbsp', 'TAB' And 'traiL'.
 hi NonText          guifg=#444444 guibg=bg
 hi SpecialKey       guifg=#444444 guibg=bg      gui=italic
 hi MatchParen       guifg=#080808 guibg=#FFD700
 "-------------------------------------------------------------------------------
-
-" "Rule"
+"}}}
+" "Rule""{{{
 hi ColorColumn                    guibg=#080808
 "-------------------------------------------------------------------------------
-
-" "Tab Line"
+"}}}
+" "Tab Line""{{{
 hi title            guifg=#AFD700
 hi TabLine          guifg=#080808 guibg=#444440
 hi TabLineFill                    guibg=#262626
 hi TabLineSel       guifg=#AFD700 guibg=bg
 "-------------------------------------------------------------------------------
-
-" "Visual Selection"
+"}}}
+" "Visual Selection""{{{
 hi Visual                         guibg=#303030
 hi VisualNOS                      guibg=#303030
 "-------------------------------------------------------------------------------
-
-" "Search"
+"}}}
+" "Search""{{{
 hi Search           guifg=#000000 guibg=#FFD700
 hi IncSearch        guifg=#000000 guibg=#FFD700
 "-------------------------------------------------------------------------------
-
-" "Diff"
+"}}}
+" "Diff""{{{
 hi DiffAdd          guifg=#000000 guibg=#D7FFAF
 hi DiffChange       guifg=#626262 guibg=#1C1C1C
 hi DiffDelete       guifg=#000000 guibg=#FFAFAF
 hi DiffText         guifg=#000000 guibg=#D7FFAF
 "-------------------------------------------------------------------------------
-
-" "Messages"
+"}}}
+" "Messages""{{{
 hi ModeMsg          guifg=fg      guibg=bg
 hi ErrorMsg         guifg=#FF0000 guibg=bg
 hi MoreMsg          guifg=fg      guibg=bg
 hi Question         guifg=fg      guibg=bg
 hi WarningMsg       guifg=fg      guibg=bg
 "-------------------------------------------------------------------------------
-
-" "Spell Checker"
+"}}}
+" "Spell Checker""{{{
 hi SpellBad         guisp=#FF5F5F gui=undercurl
 hi SpellCap         guisp=#FF5F5F gui=undercurl
 hi SpellLocal       guisp=#FF8700 gui=undercurl
 hi SpellRare        guisp=#FF8700 gui=undercurl
 "-------------------------------------------------------------------------------
-
-" "Autocomplete Menu"
+"}}}
+" "Autocomplete Menu""{{{
 hi Pmenu            guifg=#5FD7FF guibg=#444444
 hi PmenuSel         guifg=#5FD7FF guibg=#262626
 hi PmenuSbar                      guibg=#000000
 hi PmenuThumb       guifg=#5FD7FF
 "-------------------------------------------------------------------------------
-
-" "ShowMarks"
+"}}}
+" "ShowMarks""{{{
 hi ShowMarksHLl     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLu     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLo     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=NONE
 "-------------------------------------------------------------------------------
-
-" "Git"
-hi gitcommitDiscardedType  guifg=#FFD700          gui=NONE
-hi gitcommitDiscardedFile  guifg=#FFD700          gui=NONE
-hi gitcommitSelectedType   guifg=#87FF00 guibg=bg gui=NONE
-hi gitcommitSelectedFile   guifg=#87FF00 guibg=bg gui=NONE
-hi gitcommitHeader         guifg=#5FD7FF guibg=bg gui=NONE
-"-------------------------------------------------------------------------------
-
-
+"}}}
+" "Insert Mode Indicator""{{{
+" This specifies which color to change the cursor line
+" and status bar to when you enter into Insert modes and back to Normal mode. As
+" well as to temporarily turn off search highlighting when in Insert mode and
+" back on after escaping.
+" augroup ModeIndicator
+"   au InsertEnter * hi User1 guifg=#1C1C1C guibg=#FF005F ctermfg=234 ctermbg=197
+"   au InsertEnter * hi User2 guifg=#FF005F guibg=#FF005F ctermfg=197 ctermbg=197
+"   au InsertEnter * hi Cursorline guifg=NONE guibg=NONE gui=underline
+"   au InsertEnter * hi Cursorline ctermfg=NONE ctermbg=NONE cterm=NONE term=underline
+"   au InsertEnter * hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE term=underline
+"   au InsertEnter * setlocal nohlsearch
+"
+"   au InsertLeave * hi User1 guifg=#1C1C1C guibg=#87FF00 ctermfg=234 ctermbg=118
+"   au InsertLeave * hi User2 guifg=#5F5F00 guibg=#87FF00 ctermfg=58 ctermbg=118
+"   au InsertLeave * hi Cursorline guifg=NONE guibg=#87FF00 guisp=#FF005F
+"   au InsertLeave * hi Cursorline ctermfg=NONE ctermbg=234 cterm=NONE
+"   au InsertLeave * hi CursorColumn ctermfg=NONE ctermbg=234 cterm=NONE
+"   au InsertLeave * setlocal hlsearch
+" augroup END
+"-------------------------------------------------------------------------------------------------------------------------------
 
 "}}}
-" POWERLINE:"{{{
+" "Powerline:"{{{
 call Pl#Hi#Allocate({
 	\ 'black'          : 16,
 	\ 'white'          : 231,
@@ -333,7 +341,7 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 	\ ])
 "-------------------------------------------------------------------------------
 
-" "Legacy Status Line"
+" "Legacy Status Line""{{{
 " hi StatusLine       guifg=#1C1C1C guibg=#87FF00
 " hi StatusLineNC     guifg=#1C1C1C guibg=#87FF00
 " " Normal
@@ -353,27 +361,9 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 "-------------------------------------------------------------------------------
 
 
+"}}}
+"}}}
 
-" "Insert Mode Indicator" This specifies which color to change the cursor line
-" and status bar to when you enter into Insert modes and back to Normal mode. As
-" well as to temporarily turn off search highlighting when in Insert mode and
-" back on after escaping.
-" augroup ModeIndicator
-"   au InsertEnter * hi User1 guifg=#1C1C1C guibg=#FF005F ctermfg=234 ctermbg=197
-"   au InsertEnter * hi User2 guifg=#FF005F guibg=#FF005F ctermfg=197 ctermbg=197
-"   au InsertEnter * hi Cursorline guifg=NONE guibg=NONE gui=underline
-"   au InsertEnter * hi Cursorline ctermfg=NONE ctermbg=NONE cterm=NONE term=underline
-"   au InsertEnter * hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE term=underline
-"   au InsertEnter * setlocal nohlsearch
-"
-"   au InsertLeave * hi User1 guifg=#1C1C1C guibg=#87FF00 ctermfg=234 ctermbg=118
-"   au InsertLeave * hi User2 guifg=#5F5F00 guibg=#87FF00 ctermfg=58 ctermbg=118
-"   au InsertLeave * hi Cursorline guifg=NONE guibg=#87FF00 guisp=#FF005F
-"   au InsertLeave * hi Cursorline ctermfg=NONE ctermbg=234 cterm=NONE
-"   au InsertLeave * hi CursorColumn ctermfg=NONE ctermbg=234 cterm=NONE
-"   au InsertLeave * setlocal hlsearch
-" augroup END
-"-------------------------------------------------------------------------------------------------------------------------------
 "}}}
 " GENERAL SYNTAX:"{{{
 " ******************************************************************************
@@ -437,10 +427,25 @@ hi Error            guifg=#FFFFFF guibg=#FF0000 gui=NONE
 hi Todo             guifg=#FFD700 guibg=bg      gui=bold
 "-------------------------------------------------------------------------------
 
+"}}}
+" GIT SYNTAX:"{{{
+" ******************************************************************************
 
+hi DiffAdded               guifg=#87FF00 guibg=bg gui=NONE
+hi DiffRemoved             guifg=#FF005F guibg=bg gui=NONE
+hi GitCommitDiff           guifg=#BCBCBC guibg=bg gui=NONE
+hi GitCommitSummary        guifg=#BCBCBC guibg=bg gui=NONE
+hi gitcommitHeader         guifg=#5FD7FF guibg=bg gui=NONE
+hi gitcommitDiscardedType  guifg=#FFD700 guibg=bg gui=NONE
+hi gitcommitDiscardedFile  guifg=#FFD700 guibg=bg gui=NONE
+hi gitcommitSelectedType   guifg=#87FF00 guibg=bg gui=NONE
+hi gitcommitSelectedFile   guifg=#87FF00 guibg=bg gui=NONE
+hi gitcommitUntrackedFile  guifg=#FF0000 guibg=bg gui=NONE
+"-------------------------------------------------------------------------------
 
 "}}}
 " VIMSCRIPT SYNTAX:"{{{
+
 " Pink
 hi link VimCommand         Statement
 hi link VimFuncName        Statement
@@ -463,18 +468,6 @@ hi link VimFunction        Tag
 hi link VimHiGuiRgb        PreProc
 "-------------------------------------------------------------------------------
 
-
-
-"}}}
-" DIFF SYNTAX:"{{{
-" ******************************************************************************
-hi DiffAdded        guifg=#87FF00
-hi DiffRemoved      guifg=#FF005F
-hi GitCommitDiff    guifg=#BCBCBC
-hi GitCommitSummary guifg=#BCBCBC
-"-------------------------------------------------------------------------------
-
-
 "}}}
 " SCSS SYNTAX:"{{{
 " ******************************************************************************
@@ -483,6 +476,7 @@ hi GitCommitSummary guifg=#BCBCBC
 hi link CssColorProp       Statement
 hi link CssFontProp        Statement
 hi link CssRenderProp      Statement
+hi link SassProperty       Statement
 hi link CssTextProp        Operator
 hi link CssBoxProp         Operator
 hi link SassIDChar         Operator
@@ -496,7 +490,6 @@ hi link SassDefinition     Type
 hi link SassMixinName      Type
 hi link SassMixing         Type
 hi link SassClass          Type
-hi link SassProperty       Type
 hi link CssMediaComma      Type
 
 " Blue
@@ -508,13 +501,13 @@ hi link CssValueLength     Constant
 hi link CssFontAttr        Constant
 hi link SassCssAttribute   Constant
 hi link CssColor           Constant
+hi link CssRenderAttr      Constant
+hi link CssBoxAttr         Constant
 hi link CssGeneratedContentAttr Constant
 
 " Green
 hi link CssImportant       PreProc
 hi link CssPseudoClassId   PreProc
 "-------------------------------------------------------------------------------
-
-
 
 "}}}
