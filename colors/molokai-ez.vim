@@ -482,15 +482,18 @@ hi link CssBoxProp         Operator
 hi link SassIDChar         Operator
 hi link SassClassChar      Operator
 hi link CssPseudoClass     Operator
+hi link CssUIProp          Operator
+hi link SassMixing         Operator
+hi link SassDefinition     Operator
 hi link CssGeneratedContentProp Statement
 
 " Tan
 hi link CssBraces          Type
-hi link SassDefinition     Type
+" hi link SassDefinition     Type
 hi link SassMixinName      Type
-hi link SassMixing         Type
 hi link SassClass          Type
 hi link CssMediaComma      Type
+hi link CssTagName         Type
 
 " Blue
 hi link SassVariable       Constant
@@ -503,11 +506,13 @@ hi link SassCssAttribute   Constant
 hi link CssColor           Constant
 hi link CssRenderAttr      Constant
 hi link CssBoxAttr         Constant
+hi link CssUIAttr          Constant
+hi link SassMixinName      Constant
 hi link CssGeneratedContentAttr Constant
 
 " Green
 hi link CssImportant       PreProc
+hi link CssPseudoClass     PreProc
 hi link CssPseudoClassId   PreProc
 "-------------------------------------------------------------------------------
-
 "}}}
