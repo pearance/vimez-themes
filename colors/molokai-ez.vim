@@ -87,6 +87,27 @@ hi LineNr           guifg=#808080 guibg=#262626
 hi SignColumn       guifg=#AFD700 guibg=#262626
 "-------------------------------------------------------------------------------
 "}}}
+" "ShowMarks""{{{
+hi ShowMarksHLl     guifg=#AFD700 guibg=#262626 gui=NONE
+hi ShowMarksHLu     guifg=#AFD700 guibg=#262626 gui=NONE
+hi ShowMarksHLo     guifg=#AFD700 guibg=#262626 gui=NONE
+hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=NONE
+"-------------------------------------------------------------------------------
+"}}}
+" "Git Gutter""{{{
+hi GitGutterAdd     guifg=#808080 guibg=#262626
+hi GitGutterChange  guifg=#808080 guibg=#262626
+hi GitGutterDelete  guifg=#808080 guibg=#262626
+hi GitGutterChangeDelete  guifg=#808080 guibg=#262626
+"-------------------------------------------------------------------------------
+"}}}
+" "Diff""{{{
+hi DiffAdd          guifg=#000000 guibg=#D7FFAF
+hi DiffChange       guifg=#000000 guibg=#5FD7FF
+hi DiffDelete       guifg=#000000 guibg=#FFAFAF
+hi DiffText         guifg=#000000 guibg=#D7FFAF
+"-------------------------------------------------------------------------------
+"}}}
 " "Folds""{{{
 hi FoldColumn       guifg=#AFD700 guibg=#262626
 hi Folded           guifg=#AFD700 guibg=bg
@@ -121,13 +142,6 @@ hi Search           guifg=#000000 guibg=#FFD700
 hi IncSearch        guifg=#000000 guibg=#FFD700
 "-------------------------------------------------------------------------------
 "}}}
-" "Diff""{{{
-hi DiffAdd          guifg=#000000 guibg=#D7FFAF
-hi DiffChange       guifg=#626262 guibg=#1C1C1C
-hi DiffDelete       guifg=#000000 guibg=#FFAFAF
-hi DiffText         guifg=#000000 guibg=#D7FFAF
-"-------------------------------------------------------------------------------
-"}}}
 " "Messages""{{{
 hi ModeMsg          guifg=fg      guibg=bg
 hi ErrorMsg         guifg=#FF0000 guibg=bg
@@ -148,13 +162,6 @@ hi Pmenu            guifg=#5FD7FF guibg=#444444
 hi PmenuSel         guifg=#5FD7FF guibg=#262626
 hi PmenuSbar                      guibg=#000000
 hi PmenuThumb       guifg=#5FD7FF
-"-------------------------------------------------------------------------------
-"}}}
-" "ShowMarks""{{{
-hi ShowMarksHLl     guifg=#AFD700 guibg=#262626 gui=NONE
-hi ShowMarksHLu     guifg=#AFD700 guibg=#262626 gui=NONE
-hi ShowMarksHLo     guifg=#AFD700 guibg=#262626 gui=NONE
-hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=NONE
 "-------------------------------------------------------------------------------
 "}}}
 " "Insert Mode Indicator""{{{
