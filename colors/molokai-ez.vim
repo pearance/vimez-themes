@@ -95,10 +95,10 @@ hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=NONE
 "-------------------------------------------------------------------------------
 "}}}
 " "Git Gutter""{{{
-hi GitGutterAdd     guifg=#808080 guibg=#262626
-hi GitGutterChange  guifg=#808080 guibg=#262626
-hi GitGutterDelete  guifg=#808080 guibg=#262626
-hi GitGutterChangeDelete  guifg=#808080 guibg=#262626
+hi GitGutterAdd     guifg=#D7FFAF guibg=#262626
+hi GitGutterChange  guifg=#5FD7FF guibg=#262626
+hi GitGutterDelete  guifg=#FFAFAF guibg=#262626
+hi GitGutterChangeDelete  guifg=#D7FFAF guibg=#262626
 "-------------------------------------------------------------------------------
 "}}}
 " "Diff""{{{
