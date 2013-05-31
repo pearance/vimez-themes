@@ -492,6 +492,7 @@ hi link CssPseudoClass     Operator
 hi link CssUIProp          Operator
 hi link SassMixing         Operator
 hi link SassDefinition     Operator
+hi link CssFontAttr        Operator
 hi link CssGeneratedContentProp Statement
 
 " Tan
@@ -508,7 +509,6 @@ hi link CssCommonAttr      Constant
 hi link CssTextAttr        Constant
 hi link CssStringQ         Constant
 hi link CssValueLength     Constant
-hi link CssFontAttr        Constant
 hi link SassCssAttribute   Constant
 hi link CssColor           Constant
 hi link CssRenderAttr      Constant
