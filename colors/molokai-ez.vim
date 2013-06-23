@@ -94,13 +94,6 @@ hi ShowMarksHLo     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=NONE
 "-------------------------------------------------------------------------------
 "}}}
-" "Git Gutter""{{{
-hi GitGutterAdd     guifg=#D7FFAF guibg=#262626
-hi GitGutterChange  guifg=#5FD7FF guibg=#262626
-hi GitGutterDelete  guifg=#FFAFAF guibg=#262626
-hi GitGutterChangeDelete  guifg=#D7FFAF guibg=#262626
-"-------------------------------------------------------------------------------
-"}}}
 " "Diff""{{{
 hi DiffAdd          guifg=#000000 guibg=#D7FFAF
 hi DiffChange       guifg=#000000 guibg=#5FD7FF
@@ -493,6 +486,7 @@ hi link CssUIProp          Operator
 hi link SassMixing         Operator
 hi link SassDefinition     Operator
 hi link CssFontAttr        Operator
+hi link CssUIAttr          Operator
 hi link CssGeneratedContentProp Statement
 
 " Tan
@@ -513,7 +507,6 @@ hi link SassCssAttribute   Constant
 hi link CssColor           Constant
 hi link CssRenderAttr      Constant
 hi link CssBoxAttr         Constant
-hi link CssUIAttr          Constant
 hi link SassMixinName      Constant
 hi link CssGeneratedContentAttr Constant
 
