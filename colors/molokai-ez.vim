@@ -99,6 +99,14 @@ hi DiffAdd          guifg=#000000 guibg=#D7FFAF
 hi DiffChange       guifg=#000000 guibg=#5FD7FF
 hi DiffDelete       guifg=#000000 guibg=#FFAFAF
 hi DiffText         guifg=#000000 guibg=#D7FFAF
+
+hi SignifyLineAdd    guifg=#000000 guibg=#D7FFAF
+hi SignifyLineChange guifg=#000000 guibg=#5FD7FF
+hi SignifyLineDelete guifg=#000000 guibg=#FFAFAF
+
+hi SignifySignAdd    guifg=#D7FFAF guibg=#262626
+hi SignifySignChange guifg=#5FD7FF guibg=#262626
+hi SignifySignDelete guifg=#FFAFAF guibg=#262626
 "-------------------------------------------------------------------------------
 "}}}
 " "Folds""{{{
@@ -523,3 +531,4 @@ hi link CssPseudoClass     PreProc
 hi link CssPseudoClassId   PreProc
 "-------------------------------------------------------------------------------
 "}}}
+"
