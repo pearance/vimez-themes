@@ -79,7 +79,7 @@ hi VertSplit        guifg=NONE    guibg=#262626
 hi Cursor           guifg=#000000 guibg=#AFD700
 hi CursorLine                     guibg=#1C1C1C
 hi CursorColumn                   guibg=#1C1C1C
-" hi CursorLineNr     guifg=#AFD700
+hi CursorLineNr     guifg=#000000 guibg=#AFD700
 "-------------------------------------------------------------------------------
 "}}}
 " "#/+ Columns""{{{
