@@ -401,7 +401,7 @@ hi Repeat           guifg=#FF0087               gui=NONE
 hi Label            guifg=#FF0087               gui=NONE
 hi Operator         guifg=#FF0087               gui=NONE
 hi Keyword          guifg=#FF0087               gui=NONE
-hi Exception        guifg=#AFD700 guibg=#262626 gui=NONE
+hi Exception        guifg=#FF0087               gui=NONE
 "-------------------------------------------------------------------------------
 
 " "Preprocessors"
@@ -455,7 +455,9 @@ hi gitcommitUntrackedFile  guifg=#FF0000 guibg=bg gui=NONE
 " HTML SYNTAX:"{{{
 " ******************************************************************************
 
-hi link htmlItalic       Normal
+hi link htmlItalic               Normal
+hi link htmlSpecialTagName       Exception
+hi link htmlTagN                 Statement
 "-------------------------------------------------------------------------------
 
 "}}}
