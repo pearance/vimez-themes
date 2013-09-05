@@ -14,8 +14,6 @@
 "                 Hamish Stuart Macpherson
 "-------------------------------------------------------------------------------
 
-
-
 " COLORS:"{{{
 " ******************************************************************************
 " "Terminal Colors""{{{
@@ -29,18 +27,17 @@
 " magenta 233 4 125
 " cyan 103 217 240
 " white 255 255 255
+"-------------------------------------------------------------------------------
 "}}}
-" "Primary Syntax Colors""{{{
+" "Primary Colors""{{{
 " #BCBCBC:250 #121212:233
 
 " #FF0087:198 #D7D787:186 #5FD7FF:81 #AFD700:148 #444444;240
 
-
-
-" "UI/Secondary Colors"
 " #FF005F:197 #87FF00:118 #FFD700:220 #AF87FF:141 #FF8700:208 #FF5F5F:203
 
 " #080808 #121212 #1C1C1C #262626 #303030 #444444 #808080
+"-------------------------------------------------------------------------------
 "}}}
 
 
@@ -80,30 +77,25 @@ let g:colors_name="molokaiez"
 hi Normal           guifg=#B2B2B2 guibg=#121212
 hi WildMenu         guifg=#87FF00 guibg=#262626
 hi Directory        guifg=#AFD700 guibg=bg
-"-------------------------------------------------------------------------------
 "}}}
 " "Window Split""{{{
 hi VertSplit        guifg=NONE    guibg=#262626
-"-------------------------------------------------------------------------------
 "}}}
 " "Cursor""{{{
 hi Cursor           guifg=#000000 guibg=#AFD700
 hi CursorLine                     guibg=#1C1C1C
 hi CursorColumn                   guibg=#1C1C1C
 hi CursorLineNr     guifg=#121212 guibg=#AFD700 gui=NONE
-"-------------------------------------------------------------------------------
 "}}}
 " "#/+ Columns""{{{
 hi LineNr           guifg=#666666 guibg=#262626
 hi SignColumn       guifg=#AFD700 guibg=#262626
-"-------------------------------------------------------------------------------
 "}}}
 " "ShowMarks""{{{
 hi ShowMarksHLl     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLu     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLo     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=NONE
-"-------------------------------------------------------------------------------
 "}}}
 " "Diff""{{{
 hi DiffAdd          guifg=#000000 guibg=#D7FFAF
@@ -118,12 +110,10 @@ hi SignifyLineDelete guifg=#000000 guibg=#FFAFAF
 hi SignifySignAdd    guifg=#D7FFAF guibg=#262626
 hi SignifySignChange guifg=#5FD7FF guibg=#262626
 hi SignifySignDelete guifg=#FFAFAF guibg=#262626
-"-------------------------------------------------------------------------------
 "}}}
 " "Folds""{{{
 hi FoldColumn       guifg=#AFD700 guibg=#262626
 hi Folded           guifg=#AFD700 guibg=bg
-"-------------------------------------------------------------------------------
 "}}}
 " "Meta Characters""{{{
 " The 'NonText' highlightinG WILL be used FOR 'eol', 'extends' and precedes.
@@ -131,28 +121,23 @@ hi Folded           guifg=#AFD700 guibg=bg
 hi NonText          guifg=#444444 guibg=bg
 hi SpecialKey       guifg=#444444 guibg=bg      gui=italic
 hi MatchParen       guifg=#080808 guibg=#FFD700
-"-------------------------------------------------------------------------------
 "}}}
 " "Rule""{{{
 hi ColorColumn                    guibg=#080808
-"-------------------------------------------------------------------------------
 "}}}
 " "Tab Line""{{{
 hi title            guifg=#AFD700
 hi TabLine          guifg=#080808 guibg=#444440
 hi TabLineFill                    guibg=#262626
 hi TabLineSel       guifg=#AFD700 guibg=bg
-"-------------------------------------------------------------------------------
 "}}}
 " "Visual Selection""{{{
 hi Visual                         guibg=#303030
 hi VisualNOS                      guibg=#303030
-"-------------------------------------------------------------------------------
 "}}}
 " "Search""{{{
 hi Search           guifg=#000000 guibg=#FFD700
 hi IncSearch        guifg=#000000 guibg=#FFD700
-"-------------------------------------------------------------------------------
 "}}}
 " "Messages""{{{
 hi ModeMsg          guifg=fg      guibg=bg
@@ -160,21 +145,18 @@ hi ErrorMsg         guifg=#FF0000 guibg=bg
 hi MoreMsg          guifg=fg      guibg=bg
 hi Question         guifg=fg      guibg=bg
 hi WarningMsg       guifg=fg      guibg=bg
-"-------------------------------------------------------------------------------
 "}}}
 " "Spell Checker""{{{
 hi SpellBad         guisp=#FF5F5F gui=undercurl
 hi SpellCap         guisp=#FF5F5F gui=undercurl
 hi SpellLocal       guisp=#FF8700 gui=undercurl
 hi SpellRare        guisp=#FF8700 gui=undercurl
-"-------------------------------------------------------------------------------
 "}}}
 " "Autocomplete Menu""{{{
 hi Pmenu            guifg=#666666 guibg=#1C1C1C
 hi PmenuSel         guifg=#666666 guibg=#121212
 hi PmenuSbar        guifg=NONE    guibg=#262626
 hi PmenuThumb       guifg=NONE    guibg=#444444
-"-------------------------------------------------------------------------------
 "}}}
 " "Startify:"{{{
 hi StartifyBracket guifg=#444444 guibg=NONE
