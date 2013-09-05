@@ -18,7 +18,6 @@
 
 " COLORS:"{{{
 " ******************************************************************************
-
 " "Terminal Colors""{{{
 " fg 196 141 255
 " bg 18 18 18
@@ -30,15 +29,11 @@
 " magenta 233 4 125
 " cyan 103 217 240
 " white 255 255 255
-
-
-
 "}}}
-" "Primary Syntax Colors"
+" "Primary Syntax Colors""{{{
 " #BCBCBC:250 #121212:233
 
 " #FF0087:198 #D7D787:186 #5FD7FF:81 #AFD700:148 #444444;240
-"-------------------------------------------------------------------------------
 
 
 
@@ -46,7 +41,16 @@
 " #FF005F:197 #87FF00:118 #FFD700:220 #AF87FF:141 #FF8700:208 #FF5F5F:203
 
 " #080808 #121212 #1C1C1C #262626 #303030 #444444 #808080
-"-------------------------------------------------------------------------------
+"}}}
+
+
+
+
+
+
+
+
+
 
 "}}}
 " INTIALIZATION:"{{{
@@ -61,10 +65,17 @@ set background=dark
 let g:colors_name="molokaiez"
 "-------------------------------------------------------------------------------
 
+
+
+
+
+
+
+
+
 "}}}
 " USER INTERFACE:"{{{
 " ******************************************************************************
-
 " "General""{{{
 hi Normal           guifg=#B2B2B2 guibg=#121212
 hi WildMenu         guifg=#87FF00 guibg=#262626
@@ -331,30 +342,16 @@ let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([
 		\ 'n': ['black', 'gray2'],
 		\ }),
 	\ ])
-"-------------------------------------------------------------------------------
-
-" "Legacy Status Line""{{{
-" hi StatusLine       guifg=#1C1C1C guibg=#87FF00
-" hi StatusLineNC     guifg=#1C1C1C guibg=#87FF00
-" " Normal
-" hi User1            guifg=#1C1C1C guibg=#87FF00 gui=NONE
-" " Dimmed
-" hi User2            guifg=#5F5F00 guibg=#87FF00 gui=NONE
-" " Non-Current
-" hi User3            guifg=#303030 guibg=#1C1C1C
-"
-" let g:Active_statusline=&g:statusline
-" let g:NCstatusline=substitute(
-"   \                substitute(g:Active_statusline,
-"   \                'User1', 'User3', 'g'),
-"   \                'User2', 'User3', 'g')
-" au WinEnter,BufEnter * let&l:statusline = g:Active_statusline
-" au WinLeave * let&l:statusline = g:NCstatusline
-"-------------------------------------------------------------------------------
-
-
 "}}}
-"}}}
+
+
+
+
+
+
+
+
+
 
 "}}}
 " GENERAL SYNTAX:"{{{
