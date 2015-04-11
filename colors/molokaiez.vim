@@ -92,6 +92,10 @@ hi ShowMarksHLu     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLo     guifg=#AFD700 guibg=#262626 gui=NONE
 hi ShowMarksHLm     guifg=#AFD700 guibg=#262626 gui=NONE
 "}}}
+" "Indent Guides""{{{
+hi IndentGuidesOdd  guibg=#1C1C1C
+hi IndentGuidesEven guibg=#1C1C1C
+"}}}
 " "Diff""{{{
 hi DiffAdd          guifg=#000000 guibg=#D7FFAF
 hi DiffChange       guifg=#000000 guibg=#5FD7FF
@@ -160,11 +164,9 @@ hi StartifyNumber  guifg=#AFD700 guibg=NONE
 hi StartifyPath    guifg=#BCBCBC guibg=NONE
 hi StartifySlash   guifg=#BCBCBC guibg=NONE
 "}}}
-" "## Syntastic"{{{
-" hi SyntasticErrorLine         guifg=#ff0000 guibg=bg
-" hi SyntasticWarningLine       guifg=#FFD700 guibg=bg
-" SyntasticStyleErrorLine
-" SyntasticStyleWarningLine
+" "Syntastic"{{{
+hi SyntasticErrorLine         guifg=#ff0000 guibg=bg
+hi SyntasticWarningLine       guifg=#FFD700 guibg=bg
 "}}}
 
 
